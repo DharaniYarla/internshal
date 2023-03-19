@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>List of Sellers</title>
+    <style>
+        .header {
+          background-color: #333;
+          color: #fff;
+          padding: 20px;
+          text-align: center;
+        }
+        
+        .content {
+          padding: 20px;
+          text-align: center;
+        }
+        
+        .footer {
+          background-color: #333;
+          color: #fff;
+          padding: 10px;
+          text-align: center;
+          margin-bottom: 0%;
+          margin-top: 70%;
+        }
+        .data{
+            text-align: center;
+        }
+      </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="text-align: cenetr;">List of Sellers</h1>
+      <div class="header">
+        <h1>Welcome to My Website</h1>
+      </div>
+      
+      <div class="content">
+        <p>Assignment</p>
+        
+      </div>
+      
+      
+      <div class="data">
+        <label for="sort-select">Sort by:</label>
+        <select id="sort-select">
+          <option value="price-desc">Price - Highest to Lowest</option>
+          <option value="price-asc">Price - Lowest to Highest</option>
+        </select>
+        <label for="category-select">Category:</label>
+        <select id="category-select">
+          <option value="">All</option>
+          <option value="exam_assist">Exam Assist</option>
+          <option value="job_assist">Job Assist</option>
+        </select>
+      </div>
+    </header>
+    <main>
+      <ul id="seller-list">
+        <!-- This will be populated dynamically by JavaScript -->
+      </ul>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/redux/dist/redux.min.js"></script>
+    <script src="https://unpkg.com/react-redux/dist/react-redux.min.js"></script>
+    <script src="https://unpkg.com/react/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom/dist/react-dom.min.js"></script>
+    <script src="./app.js"></script>
+    <div class="footer">
+        <p>Copyright &copy; 2023 My Website</p>
+      </div>
+  </body>
+</html>
